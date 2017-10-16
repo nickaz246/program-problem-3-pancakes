@@ -34,21 +34,19 @@ void pause() {
 // MAIN
  
 void main() {
-	int number; // X is a three digit number 
-	int digit_a; // hundreds place
-	int digit_b; // tens place
-	int digit_c; // ones place
+	int x; // X is a three digit number 
+	
 
 	cout << "Choose a 3 Digit number:" << endl;
 	cin >> number;
-	digit_a = number / 100;
-	digit_b = (number % 100) / 10;
-	digit_c = number % 10;
+	int a = number / 100;
+	int b= (number % 100) / 10;
+	int c = number % 10;
 
-	if (digit_a > digit_b && digit_b > digit_c) {
+	if (a > b && b > c) {
 	cout << "descending";
 }
-	else if (digit_a < digit_b && digit_b < digit_c) {
+	else if (a < b && b < c) {
 
 		cout << "ascending"; 
 
